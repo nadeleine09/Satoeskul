@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img class="logo" src="../Rules!.png">
+            <ul>
+                <li><a href="hal2.html">halo nama!</a></li>
+                <li><a href="login.php">LOG OUT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- TITLE -->
+  <div class="dashboard-title">DATA SISWA</div>
+
+  <div class="table-container">
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>NAMA</th>
+                <th>KELAS</th>
+                <th>JURUSAN</th>
+                <th>NIS</th>
+                <th>NO.TELP</th>
+                <th>OPSI</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>NEBULA</td>
+                <td>XI</td>
+                <td>PPLG</td>
+                <td>3429342</td>
+                <td>3409279SR49</td>
+                <td class="opsi">
+                    <a href="#" class="edit">EDIT</a>
+                    <a href="#" class="hapus">HAPUS</a>
+                </td>
+            </tr>
+            </tbody>
+            </table>
+
+            <button class="add-btn">+</button>
+        </div>
+
+        <button class="back-btn">BACK</button>
+
+        <style>
+            html, body {
+    margin: 0;
+    padding: 0;
+    background: #d9d4d4;
+}
+
+        .logo {
+    width: 70px;
+    border-radius: 50%;
+}
+
+nav {
+    width: 99,9%;
+    background-color: #105298;
+    height:70px;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 30px 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+}
+
+header ul li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.dashboard-title {
+      padding: 25px;
+      font-size: 24px;
+      font-weight: bold;
+      font-family: 'Raleway', sans-serif;
+      text-transform: uppercase;
+}
+
+.table-container {
+    background: #fff;
+    padding: 0 0 60px 0;
+    border-radius: 10px;
+    width: 95%;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    overflow: visible;
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    min-height: 100px;
+}
+
+/* HEADER */
+.data-table thead {
+    background: #0f3da1;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+.data-table th {
+    padding: 12px;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* ISI TABEL */
+.data-table td {
+    padding: 14px;
+    font-size: 14px;
+    border-bottom: 1px solid #dcdcdc;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* OPSI */
+.opsi a {
+    margin: 0 5px;
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.edit {
+    color: #002399;
+    font-weight: bold;
+}
+
+.hapus {
+    color: #b30000;
+    font-weight: bold;
+}
+
+/* TOMBOL TAMBAH */
+.add-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #000;
+    color: #fff;
+    border: none;
+    font-size: 25px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;   /* INI YANG TERPENTING */
+    cursor: pointer;
+}
+
+
+/* TOMBOL BACK */
+.back-btn {
+    background: #0f3da1;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 1130px;   /* dorong ke kanan */
+    margin-right: 20px;  /* jarak dari kanan */
+    margin-top: 150px;
+    display: block;
+    font-family: 'Raleway', sans-serif;
+}
+
+        </style>
+</body>
+</html>

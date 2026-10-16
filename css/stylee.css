@@ -1,0 +1,38 @@
+body {
+    text-align: center; /* semua tulisan & tombol di tengah */
+    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    margin-top: 200px;
+    color: rgb(99, 96, 92);
+}
+
+h3 {
+    color: rgb(136, 133, 129);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* tombol ke tengah */
+    gap: 30px; /* jarak antar tombol */
+}
+
+.btn {
+    display: inline-block;
+    padding: 20px 60px;
+    background-color: #2b25c9;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #200a9e; /* efek hover ungu lebih gelap */
+}

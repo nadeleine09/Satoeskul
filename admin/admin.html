@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard Admin</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #d9d4d4;
+    }
+
+    /* NAVBAR */
+   .navbar {
+    background: #143e8f;
+    color: white;
+    height: 60px; /* ini memastikan navbar tidak mengikuti ukuran logo */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; /* supaya absolute logo nempel navbar */
+}
+
+
+.logo {
+    position: absolute;
+    top: 5px;      /* atur sendiri */
+    left: 25px;    /* atur sendiri */
+    width: 70px;  /* bisa kamu gedein tanpa ngubah navbar */
+    z-index: 10;
+}
+
+
+    .navbar .left {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+  
+
+    .navbar .right {
+      display: flex;
+      gap: 25px;
+      font-size: 18px;
+    }
+
+
+    /* DASHBOARD TITLE */
+    .dashboard-title {
+      padding: 25px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    /* CARD WRAPPER */
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      padding: 0 25px 40px 25px;
+    }
+
+    /* CARD STYLE */
+    .card {
+      background: white;
+      width: 360px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.15);
+    }
+
+    .card.big {
+      width: 750px;
+    }
+
+    .card-title {
+      font-size: 16px;
+      color: #333;
+    }
+
+    .card-number {
+      font-size: 50px;
+      text-align: center;
+      margin: 20px 0;
+      font-weight: bold;
+    }
+
+    .btn {
+      display: block;
+      width: 130px;
+      padding: 8px;
+      margin: 0 auto;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      background: #bcd3f4;
+      font-size: 14px;
+    }
+
+    .btn:hover {
+      background: #9fc4f0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+ <div class="navbar">
+    <img class="logo" src="../Rules!.png">
+    <div class="left">
+      <span>DASHBOARD ADMIN</span>
+    </div>
+    <div class="right">
+      <span>halo nama!</span>
+      <span><a href="logout.php" style="color:white; text-decoration:none;">LOG OUT</a></span>
+    </div>
+</div>
+
+
+
+  <!-- TITLE -->
+  <div class="dashboard-title">DASHBOARD</div>
+
+  <!-- CARDS -->
+  <div class="cards">
+
+    <!-- TOTAL SISWA -->
+    <div class="card">
+      <div class="card-title">TOTAL SISWA :</div>
+      <div class="card-number"><?php echo $total_siswa; ?></div>
+      <button class="btn" onclick="window.location.href='siswa.php'">kelola data</button>
+    </div>
+
+    <!-- TOTAL EKSKUL -->
+    <div class="card">
+      <div class="card-title">TOTAL EKSTRAKURIKULER :</div>
+      <div class="card-number"><?php echo $total_ekskul; ?></div>
+      <button class="btn" onclick="window.location.href='ekskul.php'">kelola data</button>
+    </div>
+
+    <!-- TOTAL PEMBINA (CARD BIG) -->
+    <div class="card big">
+      <div class="card-title">TOTAL PEMBINA :</div>
+      <div class="card-number"><?php echo $total_pembina; ?></div>
+      <button class="btn" onclick="window.location.href='pembina.php'">kelola data</button>
+    </div>
+
+  </div>
+
+</body>
+</html>
