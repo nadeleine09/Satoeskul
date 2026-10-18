@@ -1,6 +1,7 @@
 <?php
 session_start();
-include "../koneksi.php";
+require_once __DIR__ . '/../koneksi.php';
+
 
 // Ambil data dari form
 $nis        = $_POST['nis'];

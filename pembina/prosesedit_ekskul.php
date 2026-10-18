@@ -1,5 +1,6 @@
 <?php
-include '../koneksi.php';
+require_once __DIR__ . '/../koneksi.php';
+
 
 $id         = $_POST['id_ekskul'];
 $nama       = $_POST['nama_ekskul'];

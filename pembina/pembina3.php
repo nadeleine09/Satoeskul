@@ -1,6 +1,7 @@
 <?php
 session_start();
-include '../koneksi.php';
+require_once __DIR__ . '/../koneksi.php';
+
 
 // Pastikan pembina sudah login
 if (!isset($_SESSION['id_pembina'])) {

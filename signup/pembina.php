@@ -1,6 +1,7 @@
 <?php
 // Jika file ini di folder signup/, gunakan include '../koneksi.php';
-include '../koneksi.php'; // ganti path sesuai lokasi koneksi.php
+require_once __DIR__ . '/../koneksi.php';
+ // ganti path sesuai lokasi koneksi.php
 
 $error = '';
 

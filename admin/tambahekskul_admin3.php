@@ -1,5 +1,6 @@
 <?php
-include '../koneksi.php';
+require_once __DIR__ . '/../koneksi.php';
+
 
 // Ambil semua pembina untuk dropdown
 $pembina = mysqli_query($conn, "SELECT id_pembina, nama_pembina FROM tbpembina ORDER BY nama_pembina ASC");

@@ -1,6 +1,7 @@
 <?php
 session_start();
-include "../koneksi.php";
+require_once __DIR__ . '/../koneksi.php';
+
 
 if (!isset($_GET['id'])) {
     die("Ekskul tidak ditemukan.");

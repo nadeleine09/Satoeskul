@@ -1,5 +1,6 @@
 <?php
-include '../koneksi.php';
+require_once __DIR__ . '/../koneksi.php';
+
 
 // TOTAL SISWA
 $q_siswa = mysqli_query($conn, "SELECT COUNT(*) AS total FROM tbsiswa");

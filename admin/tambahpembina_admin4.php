@@ -1,5 +1,6 @@
 <?php
-include '../koneksi.php';
+require_once __DIR__ . '/../koneksi.php';
+
 
 // Ambil semua ekskul untuk dropdown
 $ekskul = mysqli_query($conn, "SELECT * FROM tbekskul ORDER BY nama_ekskul ASC");

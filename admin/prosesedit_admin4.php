@@ -1,5 +1,6 @@
 <?php
-include '../koneksi.php';
+require_once __DIR__ . '/../koneksi.php';
+
 
 // ambil data dari form
 $id_pembina = $_POST['id_pembina'];

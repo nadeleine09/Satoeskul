@@ -1,5 +1,6 @@
 <?php
-include '../koneksi.php';
+require_once __DIR__ . '/../koneksi.php';
+
 
 if (!isset($_GET['id'])) {
     echo "<script>alert('ID daftar tidak ditemukan'); window.location='data_siswa.php';</script>";

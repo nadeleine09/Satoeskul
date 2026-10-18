@@ -1,5 +1,6 @@
 <?php
-include '../koneksi.php';
+require_once __DIR__ . '/../koneksi.php';
+
 $id = $_GET['id'];
 
 $data = mysqli_query($conn, "SELECT * FROM tbekskul WHERE id_ekskul='$id'");

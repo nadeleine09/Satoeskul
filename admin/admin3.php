@@ -1,5 +1,5 @@
 <?php
-include "../koneksi.php";
+require_once __DIR__ . '/../koneksi.php';
 
 // SEARCH
 $keyword = isset($_GET['keyword']) ? $_GET['keyword'] : '';
